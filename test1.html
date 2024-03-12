@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Bella Napoli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #EF3F3F;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #D7ACAC;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Ascundem inițial toate secțiunile */
+        }
+        footer {
+            background-color: #EF3F3F;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item h3 {
+            color: #EF3F3F;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .menu-item p {
+            color: #666;
+            font-size: 18px;
+        }
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        /* Stiluri pentru secțiunile care sunt targetate */
+        section:target {
+            display: block; /* Afișăm secțiunea targetată */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pizzeria Bella Napoli</h1>
+        <p>Gustați adevărata pizza italiană</p>
+    </header>
+    <nav>
+        <a href="#about"><i class="fas fa-info-circle icon"></i>Despre Noi</a>
+        <a href="#menu"><i class="fas fa-utensils icon"></i>Meniu</a>
+        <a href="#contact"><i class="fas fa-envelope icon"></i>Contact</a>
+    </nav>
+    <section id="about">
+        <h2><i class="fas fa-info-circle icon"></i>Despre Noi</h2>
+        <p>Bine ați venit la Pizzeria Bella Napoli, unde tradiția italiană se îmbină cu pasiunea pentru pizza. Folosim doar ingrediente proaspete și autentice pentru a crea cele mai delicioase pizza.</p>
+    </section>
+    <section id="menu">
+        <h2><i class="fas fa-utensils icon"></i>Meniu</h2>
+        <div class="menu-item">
+            <h3>Pizza Margherita</h3>
+            <p>Mozzarella di bufala, roșii</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Quattro Stagioni</h3>
+            <p>Șuncă presată, ciuperci, anșoa, măsline, mozzarella</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Diavola</h3>
+            <p>Salsiccia picantă, ardei iute, mozzarella, roșii</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Capricciosa</h3>
+            <p>Șuncă presată, ciuperci, măsline, ou, mozzarella</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Frutti di Mare</h3>
+            <p>Fructe de mare, roșii, usturoi, mozzarella</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Quattro Formaggi</h3>
+            <p>Gorgonzola, mozzarella, parmezan, ricotta</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Vegetariană</h3>
+            <p>Ardel, ciuperci, măsline, roșii, mozzarella</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Prosciutto e Funghi</h3>
+            <p>Prosciutto crudo, ciuperci, mozzarella, roșii</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Carbonara</h3>
+            <p>Bacon, ou, parmezan, mozzarella, usturoi</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza Quattro Stagioni</h3>
+            <p>Șuncă presată, ciuperci, anșoa, măsline, mozzarella</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2><i class="fas fa-envelope icon"></i>Contact</h2>
+        <div class="contact-info">
+            <p>Pentru rezervări sau informații, nu ezitați să ne contactați:</p>
+            <p>Email: info@pizzeriabellanapoli.it</p>
+            <p>Telefon: +1234567890</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pizzeria Bella Napoli. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
